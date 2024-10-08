@@ -1,0 +1,40 @@
+{
+    "name": "dave-liddament/rector-custom-rules-workshop",
+    "description": "Repo to support the rector custom rules workshop",
+    "type": "project",
+    "require": {
+        "php": ">=8.2 <8.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.4",
+        "rector/rector": "^2.0.16"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DaveLiddament\\RectorCustomRulesWorkshop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DaveLiddament\\RectorCustomRulesWorkshop\\Test\\": "tests/",
+            "Utils\\Rector\\": "utils/rector/src",
+            "Utils\\Rector\\Tests\\": "utils/rector/tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dave Liddament",
+            "email": "dave@lampbristol.com"
+        }
+    ],
+    "scripts": {
+        "all-checks": [
+            "composer validate --strict",
+            "@test"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}

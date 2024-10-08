@@ -1,0 +1,3 @@
+<?php
+
+$age = getAge("dave");

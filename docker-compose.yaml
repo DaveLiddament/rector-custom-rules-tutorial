@@ -1,0 +1,22 @@
+services:
+  php82:
+    build:
+      args:
+        PHP_VERSION: "8.2-"
+    tty: true
+    volumes:
+      - .:/app/
+  php83:
+    build:
+      args:
+        PHP_VERSION: "8.3-"
+    tty: true
+    volumes:
+      - .:/app/
+  php84:
+    build:
+      args:
+        PHP_VERSION: "8.4-"
+    tty: true
+    volumes:
+      - .:/app/
