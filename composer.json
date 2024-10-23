@@ -17,7 +17,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DaveLiddament\\RectorCustomRulesWorkshop\\Test\\": "tests/"
+            "DaveLiddament\\RectorCustomRulesWorkshop\\Test\\": "tests/",
+            "Utils\\Rector\\": "utils/rector/src",
+            "Utils\\Rector\\Tests\\": "utils/rector/tests"
         }
     },
     "authors": [
@@ -26,12 +28,12 @@
             "email": "dave@lampbristol.com"
         }
     ],
-    "scripts" : {
+    "scripts": {
         "all-checks": [
             "composer validate --strict",
             "@test"
         ],
-        "test" : [
+        "test": [
             "vendor/bin/phpunit"
         ]
     }
